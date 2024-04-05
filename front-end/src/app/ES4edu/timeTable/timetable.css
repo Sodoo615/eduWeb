@@ -1,0 +1,39 @@
+.main-timeTale {
+   margin: 20px;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .child-timeTable {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .titlesss{
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
+  }
+  
+  .timetable {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .timetable th,
+  .timetable td{
+    border: 1px solid #ddd;
+    padding: 13px;
+    text-align: left;
+  }
+  
+  .timetable th {
+   
+    color: #000;
+  }
+  

@@ -1,0 +1,528 @@
+.mongolabout {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 70vh;
+  background: url("/about.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mongolabout::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.mongolabout h2 {
+  position: relative;
+  z-index: 1;
+  padding: 100px;
+  color: #fff;
+  letter-spacing: 8px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #e1e1e1, #fff, #9b9898);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 800%;
+  }
+}
+.tuhai {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.falgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.falgs img {
+  width: 80px;
+}
+.flag {
+  display: flex;
+  justify-content: center;
+}
+.flag img {
+  width: 200px;
+}
+.aboutMongol {
+  display: flex;
+  justify-content: center;
+  gap: 180px;
+  height: 23vh;
+  width: 100vw;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.aboutMongol h3 {
+  display: flex;
+  width: 130px;
+  color: #725c5c;
+  font-size: 40px;
+}
+.medeelel p {
+  width: 700px;
+  height: 50px;
+  padding: 20px;
+  font-size: 20px;
+  text-align: start;
+  color: #625d5d;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.mongol {
+  color: #725c5c;
+  font-size: 40px;
+}
+.mountain {
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #725c5c;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.mountain p {
+  padding-top: 20px;
+  text-transform: lowercase;
+  font-size: 15px;
+  width: 700px;
+  text-align: center;
+}
+.mountain h3 {
+  border-bottom: 1px solid rgb(119, 90, 90);
+  color: #725c5c;
+  font-weight: 200;
+}
+.mountain span {
+  font-weight: 400;
+  color: rgb(195, 165, 120);
+}
+.mountainType {
+  display: flex;
+  overflow-x: scroll;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 30px;
+  justify-content: center;
+}
+
+.mountainType p {
+  position: relative;
+  z-index: 2;
+  font-size: 20px;
+  padding: 20px;
+  font-weight: 100;
+  color: #fff;
+  width: 300px; /* Adjust width as needed */
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition:
+    height 5s,
+    background-size 5s ease; /* Add transition for width, height, and background-size */
+}
+
+.mountainType p:hover span {
+  display: block;
+  padding-bottom: 70px;
+  background-size: cover; /* Ensure the background covers the expanded area */
+}
+.bairlal {
+  display: none;
+  padding-top: 20px;
+  height: 100%;
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+}
+/* Your existing type styles */
+.type1,
+.type2,
+.type3,
+.type4,
+.type5,
+.type6,
+.type7 {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+}
+
+.type1 {
+  background-image: url("https://www.toursmongolia.com/uploads/Delger%20khaan1.jpg");
+}
+
+.type2 {
+  background-image: url("https://www.discovermongolia.mn/uploads/2-Kharkhiraa-turgen-top-10-places-bayar-2.jpg");
+}
+
+.type3 {
+  background-image: url("https://www.discovermongolia.mn/uploads/4-Khermen-tsav-top-10-places-bayar.JPG");
+}
+
+.type4 {
+  background-image: url("https://www.discovermongolia.mn/uploads/5-Tsambagarav-top-10-places-bayar.JPG");
+}
+
+.type5 {
+  background-image: url("https://www.discovermongolia.mn/uploads/10-lake-khuvsgul-top-10-places-bayar-2.jpg");
+}
+
+.type6 {
+  background-image: url("https://www.discovermongolia.mn/uploads/7-Khetsuu-khad-Hyargas-lake-top-10-places-bayar.JPG");
+}
+
+.type7 {
+  background-image: url("/tolboLake.jpeg");
+}
+
+.mainHistory {
+  position: relative;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 75vh;
+  background: url("https://www.cam.ac.uk/sites/www.cam.ac.uk/files/news/news/gettyimages-160626124-genghis-khan.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.History {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainHistory::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.History p {
+  position: relative;
+  color: linear;
+  width: 500px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.oldFlag {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  align-items: center;
+}
+.khaan {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+
+  align-items: center;
+}
+.khaan p {
+  margin-top: 20px;
+  text-align: start;
+  font-family: sans-serif;
+}
+.flagOld img {
+  position: relative;
+  width: 200px;
+  height: 100px;
+}
+.flagOld {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.oldFlag p {
+  width: 500px;
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: start;
+}
+.khaan img {
+  position: relative;
+  width: 300px;
+  padding-top: 30px;
+  height: 200px;
+}
+.traditional {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+}
+.traditional img {
+  width: 100vw;
+  height: 600px;
+  margin-top: 50px;
+}
+.traditional h3 {
+  border-bottom: 1px solid rgb(119, 90, 90);
+  color: #725c5c;
+  padding-top: 30px;
+  font-weight: 200;
+}
+.traditional span {
+  font-weight: 400;
+  color: rgb(195, 165, 120);
+}
+.shuureh {
+  overflow: hidden;
+  width: 380px;
+  height: 300px;
+}
+
+.shuureh img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.shuureh img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.shuureh:hover img {
+  transform: scale(1.2);
+}
+.mainShuureh {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.mainShuureh p {
+  width: 400px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+@keyframes filling {
+  from {
+    background-position: center 25%;
+  }
+  to {
+    background-position: center 50%;
+  }
+}
+.container-text {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH7mDfF6aXelofUP8xDEjz8aW7KcldeiHLAA&usqp=CAU");
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: #ffffff;
+  font-size: 40px;
+  font-family: "Bungee";
+  animation: filling 3s ease forwards;
+}
+@media (max-width: 1100px) {
+  .aboutMongol {
+    display: flex;
+    gap: 10px;
+  }
+  .medeelel p {
+    width: 500px;
+    font-size: 15px;
+  }
+  .aboutMongol h3 {
+    font-size: 30px;
+  }
+  .falgs img {
+    width: 70px;
+  }
+  .tuhai {
+    display: flex;
+    gap: 0px;
+    align-items: center;
+  }
+  .mainHistory {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+  }
+  .khaan img {
+    width: 300px;
+    height: 230px;
+  }
+  .flagOld img {
+    width: 200px;
+    height: 100px;
+  }
+  .khaan p {
+    font-size: 13px;
+    width: 250px;
+  }
+
+  .oldFlag p {
+    font-size: 13px;
+    width: 250px;
+  }
+}
+@media (max-width: 800px) {
+  .aboutMongol {
+    display: flex;
+    gap: 10px;
+  }
+  .medeelel p {
+    width: 400px;
+    font-size: 15px;
+  }
+  .aboutMongol h3 {
+    font-size: 30px;
+  }
+  .falgs img {
+    width: 70px;
+  }
+  .mainShuureh {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .shuureh {
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+  }
+  .mainShuureh p {
+    width: 280px;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 600px) {
+  .mongolabout {
+    height: 50vh;
+  }
+  .aboutMongol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .medeelel p {
+    width: 400px;
+    border-bottom: 100px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .mountain {
+    margin-top: 100px;
+  }
+  .mountain h3 {
+    font-size: 24px;
+  }
+  .container-text {
+    font-size: 24px;
+  }
+  .traditional h3 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .mountain p {
+    width: 400px;
+  }
+  .mountainType {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .mountainType p {
+    font-size: 15px;
+  }
+  .type1 {
+    width: 150px;
+    height: 150px;
+  }
+  .type2 {
+    width: 150px;
+    height: 150px;
+  }
+  .type3 {
+    width: 150px;
+    height: 150px;
+  }
+  .type4 {
+    width: 150px;
+    height: 150px;
+  }
+  .type5 {
+    width: 150px;
+    height: 150px;
+  }
+  .type6 {
+    width: 150px;
+    height: 150px;
+  }
+  .type7 {
+    width: 150px;
+    height: 150px;
+  }
+  .mainHistory {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+  }
+  .khaan img {
+    width: 200px;
+    height: 130px;
+  }
+  .flagOld img {
+    width: 100px;
+    height: 50px;
+  }
+  .khaan p {
+    font-size: 10px;
+    width: 200px;
+  }
+
+  .oldFlag p {
+    font-size: 10px;
+    width: 250px;
+  }
+  .tuhai {
+    display: flex;
+    gap: 0px;
+    align-items: center;
+  }
+  .traditional img {
+    width: 100vw;
+    height: 300px;
+    margin-top: 50px;
+  }
+}

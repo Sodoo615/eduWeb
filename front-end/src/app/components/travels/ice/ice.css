@@ -1,0 +1,245 @@
+.imageMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.imageCon {
+  display: flex;
+  gap: 20px;
+}
+.imageMains {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+.imageMains img {
+  width: 180px;
+  height: 180px;
+}
+.mainImg {
+  width: 65vw;
+  height: 600px;
+}
+.images {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.images img {
+  width: 180px;
+  height: 180px;
+
+}
+.howsgol {
+  display: flex;
+  padding-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.howsgol p {
+  width: 710px;
+  text-align: center;
+  margin-top: 10px;
+  color: gray;
+}
+.howsgol h2 {
+  font-family: sans-serif;
+}
+.howsgol img {
+  width: 600px;
+  height: 350px;
+}
+
+.animalcard {
+	align-content: start;
+	border: 1px solid #ccc;
+	background: rgba(0, 0, 0, 0.05);
+}
+.animalcard__image {
+	grid-area: image;
+	font-size: 0.5em;
+	font-style: italic;
+	text-align: center;
+}
+.animalcard__description {
+	grid-area: description;
+	font-size: 0.9em;
+	text-align: center;
+
+}
+.animalcard__image img   {
+  height: 300px;
+}
+.animalcard__images  img{
+	height: 100%;
+  width: 100%;
+}
+.animalcard > * > :first-child {
+	margin-top: 0;
+}
+.animalcard > * > :last-child {
+	margin-bottom: 0;
+}
+
+/** Container Queries in Action: If enough space is available, place image next to description **/
+.animalcard-wrapper {
+	container-type: inline-size;
+	container-name: animalcard;
+}
+
+.animalcard { /* SMALL LAYOUT: Image stacked on top of Description */
+	display: grid;
+	grid-template: "image" "description" / 1fr;
+	gap: 1em;
+	padding: 1em;
+}
+@container (min-width: 480px) { /* MEDIUM LAYOUT: Image next to Description (1fr each) */
+	.animalcard {
+	
+		padding: 2em;
+		grid-template: "image description" / 1fr 1fr;
+	}
+
+	.animalcard__description {
+		text-align: left;
+	}
+}
+@container animalcard (min-width: 1120px) { /* LARGE LAYOUT: Large Image next to Description */
+	.animalcard {
+		grid-template-columns: 2fr 1fr;
+	}
+}
+
+/* Set of animalcards: Place nested elements next to eachother */
+.animalcards {
+	display: grid;
+	gap: 1em;
+	grid-template-columns: 1fr;
+}
+
+@media (min-width: 50em) {
+	.animalcards {
+		grid-template-columns: repeat(2, minmax(10em, 1fr))
+	}
+}
+
+@media (min-width: 80em) {
+	.animalcards {
+		grid-template-columns: repeat(auto-fit, minmax(10em, 1fr))
+	}
+}
+@supports (container-type: inline-size) {
+	.info {
+		display: none;
+	}
+}
+main {
+	font-weight: 300;
+	width: 90vw;
+	max-width: 80rem;
+	margin: 0 auto;
+	padding: 4em 0;
+}
+
+main > * {
+	margin: 0;
+}
+main > * + * {
+	margin-top: 1em;
+}
+
+main img {
+	width: 100%;
+	height: auto;
+}
+
+@media (max-width: 1100px) {
+  .imageMain {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .imageMains {
+    display: flex;
+    flex-direction: row;
+  }
+  .imageCon {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .images {
+    display: flex;
+    flex-direction: row;
+  }
+  .childOntslog p {
+    width: 200px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 900px) {
+  .imageMain {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .imageMains {
+    display: flex;
+    flex-direction: row;
+  }
+  .imageCon {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .images {
+    display: flex;
+    flex-direction: row;
+  }
+  .childOntslog p {
+    width: 400px;
+    font-size: 13px;
+  }
+  .flexOntslog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .imageMain {
+    display: flex;
+  }
+  .mainImg {
+    width: 100vw;
+    height: 40vh;
+  }
+  .imageMains {
+    display: flex;
+    flex-direction: column;
+  }
+  .imageCon {
+    display: flex;
+  }
+  .images {
+    display: flex;
+    flex-direction: column;
+  }
+  .flexOntslog {
+    display: flex;
+    flex-direction: column;
+  }
+  .childOntslog p {
+    width: 200px;
+    font-size: 13px;
+  }
+  .howsgol p {
+    font-size: 15px;
+    width: 400px;
+  }
+}
